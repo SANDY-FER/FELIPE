@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0; /* Fondo gris claro */
+            color: #333; /* Color del texto */
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff69b4; /* Color llamativo */
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff; /* Fondo blanco detrás del texto */
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra para un efecto 3D */
+            margin-bottom: 20px;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        .contact-info h2 {
+            font-size: 1.8em;
+            color: #ff69b4; /* Color llamativo */
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        form {
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+        }
+        th {
+            background: #ff69b4; /* Color de fondo para los encabezados de la tabla */
+            color: #fff; /* Color del texto en los encabezados */
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            background: #ff69b4; /* Color de fondo para el botón */
+            color: #fff; /* Color del texto del botón */
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background: #ff85c0; /* Color de fondo al pasar el ratón por encima del botón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contacto</h1>
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p><strong>Dirección:</strong> Calle las rosas 9505, Ciudad de E l Alto, Bolivia</p>
+            <p><strong>Teléfono:</strong> 75875400</p>
+            <p><strong>Correo Electrónico:</strong> sandyfelipef@gmail.com.com</p>
+        </div>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <th colspan="2">Formulario de Contacto</th>
+                </tr>
+                <tr>
+                    <td><label for="name">Nombre:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Correo Electrónico:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Mensaje:</label></td>
+                    <td><textarea id="message" name="message" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
